@@ -84,10 +84,15 @@
         '0133'
       ];
 
-      var duration = 10;
-      if (localStorage.counter === null){
+      console.log(localStorage.counter)
+
+      if (!localStorage.counter){
         localStorage.setItem('counter', 1);
       }
+
+      console.log(localStorage.counter)
+
+      var duration = 5000;
 
       animate();
 
